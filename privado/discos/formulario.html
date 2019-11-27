@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Listado de discos</title>
+    <title>Nuevo de disco</title>
 
     <base href="/">  <!-- nombre de nuestro proyecto atual -->
 
@@ -29,8 +29,6 @@
 
 <body class="bg-gradient-primary">
         
-    <h1 class="text-white">formulario nuevo disco</h1>
-
     <a class="text-white" href="privado/index.html">Volver</a>
     
     <div class="container">
@@ -60,33 +58,36 @@
                   -->
 
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Cover">
+                      <label for="validationDefault01">Cover</label>
+                      <input type="text" class="form-control form-control-user" name="validationDefault01" id="validationDefault01" placeholder="Cover" required>
                   </div>
 
                   <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Título del disco">
-                    </div>  
+                      <label for="validationDefault02">Titulo</label>
+                      <input type="text" class="form-control form-control-user" name="validationDefault02" id="validationDefault02" placeholder="Título del disco" required pattern=".{1,100}">
+                  </div>  
                   
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Cantante o grupo musical">
+                    <label for="validationDefault03">Cantante o grupo musical</label>
+                    <input type="text" class="form-control form-control-user" id="validationDefault03" placeholder="Cantante o grupo musical" required>
                   </div>
 
                   <div class="form-group">
-                    <input type="date" class="form-control form-control-user" id="exampleInputEmail" placeholder="Fecha del lanzamiento">
+                    <label for="validationDefault04">Fecha de lanzamiento</label>
+                    <input type="date" class="form-control form-control-user" id="validationDefault04" placeholder="Fecha" required>
                   </div>
                   
-                  <a href="login.html" class="btn btn-primary btn-user btn-block">
-                    Crear nuevo disco
-                  </a>
-                </form>
+                  <input type="submit" href="privado/index.html" class="btn btn-primary btn-user btn-block">
                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                </form> <!-- fin formulario -->
+                
+              </div> <!-- fin class="p-5" -->
+            </div> <!-- fin class="col-lg-7" -->
+          </div> <!-- fin class="row" -->
+        </div> <!-- fin class="card-body p-0" -->
+      </div> <!-- fin class="card o-hidden border-0 shadow-lg my-5" -->
   
-    </div>
+    </div> <!-- fin class="container" -->
     
       <!-- Bootstrap core JavaScript-->
       <script src="vendor/jquery/jquery.min.js"></script>
