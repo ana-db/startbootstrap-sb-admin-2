@@ -74,7 +74,7 @@
           <span>Lista Discos</span></a>
       </li>
 
-      <!-- Nav Item - Nuevo Disco (formularo) -->
+      <!-- Nav Item - Nuevo Disco (formulario) -->
       <li class="nav-item">
         <a class="nav-link" href="privado/discos/formulario.html">
           <i class="fas fa-file-alt fa-table"></i>
@@ -310,7 +310,6 @@
                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
-
           <!-- Contenido FORMULARIO -->
           <div class="row">
             <div class="container">
@@ -342,19 +341,19 @@
                           <div class="form-group">
                             <label for="validationDefault01">Cover</label>
                             <input type="text" class="form-control form-control-user" name="validationDefault01"
-                              id="validationDefault01" placeholder="Cover" required>
+                              id="validationDefault01" placeholder="Cover" required pattern="*\.(?:jpg|jpeg|png|gif)">
                           </div>
 
                           <div class="form-group">
                             <label for="validationDefault02">Titulo</label>
                             <input type="text" class="form-control form-control-user" name="validationDefault02"
-                              id="validationDefault02" placeholder="Título del disco" required pattern=".{1,100}">
+                              id="validationDefault02" placeholder="Título (2-100 caracteres)" required pattern=".{2,100}">
                           </div>
 
                           <div class="form-group">
                             <label for="validationDefault03">Cantante o grupo musical</label>
                             <input type="text" class="form-control form-control-user" id="validationDefault03"
-                              placeholder="Cantante o grupo musical" required>
+                            id="validationDefault03" placeholder="Cantante o grupo musical (2-100 caracteres)" required pattern=".{2,100}">
                           </div>
 
                           <div class="form-group">
