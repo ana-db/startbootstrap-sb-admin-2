@@ -1,40 +1,89 @@
+.rounded-circle {  /* table img {  */
+/*  display:block; 
+    margin:auto; */
+    width: 100px;
+    height: 100px;
+}
 
-    .rounded-circle {  /* table img {  */
-    /*  display:block; 
-        margin:auto; */
-        width: 100px;
-        height: 100px;
+.bg-login-image {
+    /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
+    background: url("../img/login.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.99); /*  */
     }
 
-    .bg-login-image {
-        /* background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800"); */
-        background: url("../img/login.jpg");
-        background-position: center;
-        background-size: cover;
-        filter: grayscale(0.99); /*  */
-      }
+.bg-register-image {
+    /* background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800"); */
+    background: url("https://images.unsplash.com/photo-1554583336-5454fe0583e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80/600x800");
+    background-position: center;
+    background-size: cover;
+}
 
-    .bg-register-image {
-        /* background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800"); */
-        background: url("https://images.unsplash.com/photo-1554583336-5454fe0583e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80/600x800");
-        background-position: center;
-        background-size: cover;
+input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid {
+    /* :focus --> para que las casillas no estén siempre marcadas en rojo sino sólo cuando el contenido está mal*/
+    color: #6e707e;
+    background-color: #fff;
+    border-color: rgba(231, 73, 59, 0.63);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+}
+
+input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid {
+    color: #e74a3b;
+    background-color: #fff;
+    border-color: rgba(231, 73, 59, 0.63);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+}
+
+/* estilo para video de fondo en ventana de login 
+(https://startbootstrap.com/snippets/video-header/): */
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh; /* 75vh era el pocentaje de pantalla que opcupaba el vídeo */
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
     }
-
-    input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid {
-        /* :focus --> para que las casillas no estén siempre marcadas en rojo sino sólo cuando el contenido está mal*/
-        color: #6e707e;
-        background-color: #fff;
-        border-color: rgba(231, 73, 59, 0.63);
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+    
+    header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     }
-
-    input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid {
-        color: #e74a3b;
-        background-color: #fff;
-        border-color: rgba(231, 73, 59, 0.63);
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+    
+    header .container {
+    position: relative;
+    z-index: 2;
     }
-
+    
+    header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    }
+    
+    @media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+    }    
