@@ -20,3 +20,21 @@
         background-position: center;
         background-size: cover;
     }
+
+    input[type="text"]:valid, input[type="email"]:valid, input[type="url"]:valid {
+        /* :focus --> para que las casillas no estén siempre marcadas en rojo sino sólo cuando el contenido está mal*/
+        color: #6e707e;
+        background-color: #fff;
+        border-color: rgba(231, 73, 59, 0.63);
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+    }
+
+    input[type="text"]:focus:invalid, input[type="email"]:focus:invalid, input[type="url"]:focus:invalid {
+        color: #e74a3b;
+        background-color: #fff;
+        border-color: rgba(231, 73, 59, 0.63);
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem, rgba(231, 73, 59, 0.63);
+    }
+
