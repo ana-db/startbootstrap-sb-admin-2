@@ -46,7 +46,7 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-    }
+}
     
     header video {
     position: absolute;
@@ -61,12 +61,12 @@ header {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    }
+}
     
     header .container {
     position: relative;
     z-index: 2;
-    }
+}
     
     header .overlay {
     position: absolute;
@@ -77,13 +77,13 @@ header {
     background-color: black;
     opacity: 0.5;
     z-index: 1;
-    }
+}
     
-    @media (pointer: coarse) and (hover: none) {
+@media (pointer: coarse) and (hover: none) {
     header {
         background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
     }
     header video {
         display: none;
     }
-    }    
+}    
